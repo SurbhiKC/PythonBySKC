@@ -1,0 +1,20 @@
+print("Enter range below")
+a = int(input("Start range from: "))
+b = int(input("End range at: "))
+if a < b:
+    print("Odd Numbers")
+    for i in range(a, b+1):
+        if i % 2 == 0:
+            continue
+        else:
+            print(i)
+    print()
+    print("Even Numbers")
+    for i in range(a, b+1):
+        if i % 2 != 0:
+            continue
+        else:
+            print(i)
+else:
+    print("Invalid range")
+    
